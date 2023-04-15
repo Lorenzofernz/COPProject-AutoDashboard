@@ -2,15 +2,22 @@ import java.util.Scanner;
 
 public class Speedometer {
 
-     int speed;
-     int maxSpeed = 120; // max speed of an average automobile in miles per hour
-     int minSpeed = 0;
-     int speedRange = maxSpeed - minSpeed;
-
-    
+    int speed; // speed of an average automobile in miles per hour
+    int maxSpeed = 120; // max speed of an average automobile in miles per hour
+    int minSpeed = 0; // min speed of an average automobile in miles per hour
+    int speedRange = maxSpeed - minSpeed; // range of speed of an average automobile in miles per hour
+    boolean speedWarning = false;
 
     public void displaySpeed() {
         System.out.println("Vehicle's current speed: " + getSpeed(speed));
+    }
+
+    public boolean isSpeedWarning(int speed) {
+        if (speed > 80) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public int getSpeed(int speed) {
