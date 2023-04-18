@@ -7,9 +7,6 @@ public class TemperatureGauge {
     private int maxTemp = 250;
     private int minTemp = 0;
     private int tempRange = maxTemp - minTemp;
-    //private boolean overheated = false;
-
-   // TemperatureGauge gauge = new TemperatureGauge();
 
     public  int getTemp(int temp) {
         temp = (int) (Math.random() * tempRange + minTemp);
@@ -29,7 +26,7 @@ public class TemperatureGauge {
     }
 
     public  void displayOverheated() {
-        System.out.println("Vehicle is overheated: " + isOverheated(temp));
+        System.out.println("Vehicle is overheated: " + temp + "°F");
     }
     
     public int currentTemp(int getTemp){

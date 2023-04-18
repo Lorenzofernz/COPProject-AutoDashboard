@@ -6,21 +6,12 @@ import javax.swing.event.SwingPropertyChangeSupport;
 
 public class FuelGauge {
 
-    // input data such as miles driven since last fill up
-    // number of gallons of fuel purchased
-    // price per gallon
-
-    // calculate and display the driver's avg miles per gallon (MPG) and the cost
-    // per mile driven
-    // Allow driver to tract their fuel economy and over time display a graph of
-    // their MOG and cost per mile driven
-
-    int miles = 0; // miles driven
-    int maxMiles = 250; // maximum amount of miles per full tank of gas of avg automobile
-    int gallons; // gallons of fuel
-    int MPG; // average miles per gallon
-    int fullTank = 12; // full tank of fuel for an average automobile
-    int totalMPG = 0;
+  private int miles = 0; // miles driven
+  private int maxMiles = 250; // maximum amount of miles per full tank of gas of avg automobile
+  private int gallons; // gallons of fuel
+  private int MPG; // average miles per gallon
+  private int fullTank = 12; // full tank of fuel for an average automobile
+  private int totalMPG = 0;
 
     Stack<Integer> trip = new Stack<Integer>();
 
